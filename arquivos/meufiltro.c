@@ -7,11 +7,14 @@ void inicializarWidgetsMeuFiltro() {
 }
 
 void adicionarWidgetsMeuFiltro(GtkWidget *container) {
-
+	label3 = gtk_label_new("Cor do fundo");
+	label4 = gtk_label_new("Sensibilidade do filtro");
 	GtkWidget *vbox = gtk_box_new(GTK_ORIENTATION_VERTICAL, 5);
 	gtk_container_set_border_width(GTK_CONTAINER(vbox), 20);
 	gtk_container_add(GTK_CONTAINER(container), vbox);
+	gtk_container_add(GTK_CONTAINER(vbox), label3);
 	gtk_container_add(GTK_CONTAINER(vbox), botaocor);
+	gtk_container_add(GTK_CONTAINER(vbox), label4);
 	gtk_container_add(GTK_CONTAINER(vbox), widgetControleNivel);
 }
 

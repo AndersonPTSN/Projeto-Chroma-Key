@@ -12,6 +12,7 @@
 GtkWidget *widgetControleNivel;
 GtkWidget *widgetMisturarCanais;
 GtkWidget *botaocor;
+GtkWidget *label3, *label4;
 
 Imagem meuFiltro(Imagem origem, Imagem origem2);
 void inicializarWidgetsMeuFiltro();

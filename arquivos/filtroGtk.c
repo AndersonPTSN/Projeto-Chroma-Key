@@ -7,7 +7,7 @@
 
 GtkWidget *window, *image, *image2;
 GtkWidget *vbox, *hbox;
-GtkWidget *label1, *label2;
+GtkWidget *label1, *label2, *label3, *label4;
 char *nomeArquivo, *nomeArquivo2;
 
 void printImagemInfo(Imagem img) {
@@ -252,6 +252,8 @@ int main(int argc, char **argv) {
 	//cria labels
 	label1 = gtk_label_new("Carregue uma imagem");
 	label2 = gtk_label_new("Aplicação de Filtros");
+	label3 = gtk_label_new("Cor do fundo");
+	label4 = gtk_label_new("Sensibilidade do filtro");
 
 	//adiciona um widget imagem vazio
 	image = gtk_image_new();
